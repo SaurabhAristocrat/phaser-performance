@@ -1,3 +1,4 @@
+
 var config = {
     type: Phaser.Auto,
     parent: 'phaser-example',
@@ -21,7 +22,8 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-    this.load.atlas('atlas', 'assets/tests/fruit/veg.png', 'assets/tests/fruit/veg.json');
+    
+    this.load.image('atlas', 'assets/tests/fruit/veg1.jpg');
 }
 
 function launch (i)
@@ -30,7 +32,7 @@ function launch (i)
 
     if (idx === 38)
     {
-        idx = 1;
+        idx = 1;    
     }
 
     if (idx < 10)
